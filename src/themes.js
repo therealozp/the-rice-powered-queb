@@ -4,7 +4,7 @@ const quebTheme = createTheme({
 	typography: {
 		// fontFamily: ["Josefin Sans", "cursive"].join(","),
 		fontFamily: [
-			'Josefin Sans',
+			'Noto Sans JP',
 			'"Helvetica Neue"',
 			'sans-serif',
 			'"Apple Color Emoji"',
@@ -26,6 +26,20 @@ const quebTheme = createTheme({
 		themeBrown: {
 			main: '#33150B',
 		},
+	},
+});
+
+const logoTheme = createTheme({
+	typography: {
+		// fontFamily: ["Josefin Sans", "cursive"].join(","),
+		fontFamily: [
+			'Abel',
+			'"Helvetica Neue"',
+			'sans-serif',
+			'"Apple Color Emoji"',
+			'"Segoe UI Emoji"',
+			'"Segoe UI Symbol"',
+		].join(','),
 	},
 });
 
