@@ -1,6 +1,7 @@
 import { Typography } from "@material-ui/core"
 import { Container } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core"
+import Image from "next/image"
 
 const useStyles = makeStyles({
     container: {
@@ -35,7 +36,7 @@ const BluAva = ({teacher}) => {
     const classes = useStyles()
     return (
         <Container className={classes.container}>
-            <img src="/BluAva.svg" />
+            <Image width={299} height={262} src="/BluAva.svg" />
             <Typography
                 className={classes.name}
                 variant="h3"
