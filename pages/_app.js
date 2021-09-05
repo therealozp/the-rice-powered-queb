@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import '../styles/globals.css';
-import quebTheme from '../src/themes';
+import { quebTheme } from '../src/themes';
 export default function MyApp(props) {
 	const { Component, pageProps } = props;
 

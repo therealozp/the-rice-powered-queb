@@ -9,15 +9,18 @@ import FolderOutlinedIcon from '@material-ui/icons/FolderOutlined';
 import FolderIcon from '@material-ui/icons/Folder';
 import MailOutlineOutlinedIcon from '@material-ui/icons/MailOutlineOutlined';
 import MailIcon from '@material-ui/icons/Mail';
-const drawerWidth = '100px';
+import { drawerWidth } from '../../utils/consts';
+
 const useStyles = makeStyles((theme) => ({
 	drawerPaper: {
-		width: drawerWidth,
+		width: `calc(${drawerWidth} - 0px)`,
 		background: theme.palette.themeBrown.main,
+	},
+	drawerInside: {
 		height: '100%',
 	},
 	drawerHeader: {
-		width: drawerWidth,
+		width: `calc(${drawerWidth} - 0.5px)`,
 		height: drawerWidth,
 		background: theme.palette.secondary.main,
 		marginBottom: '1rem',
@@ -30,8 +33,12 @@ const SideBar = () => {
 	const classes = useStyles();
 	return (
 		<>
-			<Drawer variant="permanent" className={classes.drawer}>
-				<div className={classes.drawerPaper}>
+			<Drawer
+				variant="permanent"
+				className={classes.drawer}
+				classes={{ paper: classes.drawerPaper }}
+			>
+				<div className={classes.drawerInside}>
 					<div className={classes.drawerHeader} />
 					<div
 						style={{

@@ -43,4 +43,4 @@ const logoTheme = createTheme({
 	},
 });
 
-export default quebTheme;
+export { quebTheme, logoTheme };
