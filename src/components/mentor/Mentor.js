@@ -1,11 +1,11 @@
 import React from "react"
-import BluAva from "./BluAva"
-import OraAva from "./OraAva"
+import Avas from "./Avas"
 import { Typography, makeStyles, Grid, Button } from "@material-ui/core"
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
+import { drawerWidth } from '../../utils/consts';
 
 const buttonWidth = '210px';
-const buttonHeight = '50px';
+const buttonHeight = '60px';
 const bluTeachers = [
 	{
 		name: 'Duy',
@@ -43,8 +43,12 @@ const oraTeachers = [
 ];
 
 const useStyles = makeStyles((theme) => ({
-	bottomrow: {
-		background: theme.palette.themeBrown.main,
+	title: {
+		fontFamily: 'Abel',
+		fontSize: '4rem',
+		lineHeight: '130%',
+		color: '#212353',
+		marginLeft: '6vw',
 	},
 	topcolor: {
 		background: theme.palette.secondary.main,
@@ -55,15 +59,28 @@ const useStyles = makeStyles((theme) => ({
 	},
 	bottomcolor: {
 		background: theme.palette.themeBrown.main,
+		paddingBottom: "30px",
 		width: '100vw',
-		height: '75vh',
 	},
-	title: {
-		fontFamily: 'Abel',
-		fontSize: '4rem',
-		lineHeight: '130%',
-		color: '#212353',
-		marginLeft: '6vw',
+	btnContainer: {
+		width: buttonWidth,
+		height: buttonHeight,
+		marginLeft: `calc(46.5vw - ${drawerWidth})`
+	},
+	learnMoreButton: {
+		backgroundColor: theme.palette.themeGreen.main,
+		color: '#FFFFFF',
+		boxShadow: '0px 2px 2px rgba(75, 93, 104, 0.1)',
+		transition: 'box-shadow 200ms ease',
+		'&:hover': {
+			boxShadow: '0px 5px 5px rgba(75, 93, 104, 0.1)',
+			backgroundColor: theme.palette.themeGreen.main,
+		},
+		textTransform: 'capitalize',
+		width: buttonWidth,
+		height: buttonHeight,
+		borderRadius: 100,
+		fontSize: '1em',
 	},
 }));
 
@@ -80,11 +97,11 @@ const Mentor = () => {
 				<Grid
 					container
 					justifyContent="center"
-					style={{ marginLeft: '-3.25vw' }}
+					style={{ marginLeft: '-3.25vw', paddingTop: '2vh' }}
 				>
 					{bluTeachers.map((teacher) => (
 						<Grid item key={teacher.id} xs={12} sm={6} md={4}>
-							<BluAva
+							<Avas
 								teacher={{
 									name: teacher.name,
 									subject: teacher.subject,
@@ -100,9 +117,8 @@ const Mentor = () => {
 							xs={12}
 							sm={6}
 							md={4}
-							className={classes.bottomrow}
 						>
-							<BluAva
+							<Avas
 								teacher={{
 									name: teacher.name,
 									subject: teacher.subject,
@@ -111,6 +127,15 @@ const Mentor = () => {
 						</Grid>
 					))}
 				</Grid>
+				<div className={classes.btnContainer}>
+					<Button 
+						className={classes.learnMoreButton}
+						endIcon={<ArrowForwardIcon />}
+					>
+						Learn more
+					</Button>
+				</div>
+				
 			</div>
 		</div>
 	);

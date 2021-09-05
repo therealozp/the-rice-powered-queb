@@ -2,7 +2,7 @@ import React from 'react';
 import SideBar from '../components/sidebar/SideBar';
 import NavbarTemp from '../components/navbar/NavbarTemp';
 import Mentor from '../components/mentor/Mentor';
-import Features from '../components/features/Features'
+import Features from '../components/features/Features';
 import { drawerWidth } from '../utils/consts';
 
 const HomePage = () => {
@@ -12,6 +12,7 @@ const HomePage = () => {
 			<SideBar />
 			<main style={{ marginLeft: drawerWidth }}>
 				<Mentor />
+				<Features />
 			</main>
 		</div>
 	);
