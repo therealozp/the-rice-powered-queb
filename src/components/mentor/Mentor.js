@@ -1,8 +1,6 @@
 import React from 'react';
 import BluAva from './BluAva';
-import { Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core';
-import { Grid } from '@material-ui/core';
+import { Typography, makeStyles, Grid } from '@material-ui/core';
 
 const bluTeachers = [
 	{
@@ -47,14 +45,14 @@ const useStyles = makeStyles((theme) => ({
 	topcolor: {
 		background: theme.palette.secondary.main,
 		width: '100%',
-		height: '30vh',
+		height: '20vh',
 		display: 'flex',
 		alignItems: 'center',
 	},
 	bottomcolor: {
-		background: theme.palette.themeBrown.main,
+		background: '#ffebba',
 		width: '100vw',
-		height: '75vh',
+		// height: '75vh',
 	},
 	title: {
 		fontFamily: 'Abel',
@@ -98,7 +96,7 @@ const Mentor = () => {
 							xs={12}
 							sm={6}
 							md={4}
-							className={classes.bottomrow}
+							// className={classes.bottomrow}
 						>
 							<BluAva
 								teacher={{

@@ -10,7 +10,7 @@ const useStyles = makeStyles({
 		fontWeight: '800',
 		fontSize: '21.6px',
 		lineHeight: '35px',
-		color: '#FCFCFC',
+		color: '#000000',
 	},
 	subject: {
 		textAlign: 'center',
@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 		lineHeight: '26px',
 		letterSpacing: '6px',
 		textTransform: 'uppercase',
-		color: '#FCFCFC',
+		color: '#000000',
 		opacity: 0.5,
 	},
 });
