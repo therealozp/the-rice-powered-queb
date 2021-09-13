@@ -29,18 +29,4 @@ const quebTheme = createTheme({
 	},
 });
 
-const logoTheme = createTheme({
-	typography: {
-		// fontFamily: ["Josefin Sans", "cursive"].join(","),
-		fontFamily: [
-			'Abel',
-			'"Helvetica Neue"',
-			'sans-serif',
-			'"Apple Color Emoji"',
-			'"Segoe UI Emoji"',
-			'"Segoe UI Symbol"',
-		].join(','),
-	},
-});
-
-export { quebTheme, logoTheme };
+export { quebTheme };

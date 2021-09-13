@@ -1,17 +1,22 @@
 import React from 'react';
-import SideBar from '../components/sidebar/SideBar';
-import NavbarTemp from '../components/navbar/NavbarTemp';
+// import SideBar from '../components/sidebar/SideBar';
+import Navbar from '../components/commons/Navbar';
 import Mentor from '../components/mentor/Mentor';
-import { drawerWidth } from '../utils/consts';
+import Features from '../components/features/Features';
+import Footer from '../components/commons/Footer';
 
 const HomePage = () => {
 	return (
-		<div>
-			<NavbarTemp />
-			<SideBar />
-			<main style={{ marginLeft: drawerWidth }}>
-				<Mentor />
-			</main>
+		<div style={{ position: 'relative', minHeight: '100vh ' }}>
+			<div style={{ paddingBottom: 400 }}>
+				<Navbar />
+				{/* <SideBar /> */}
+				<main>
+					<Mentor />
+					<Features />
+				</main>
+			</div>
+			<Footer />
 		</div>
 	);
 };

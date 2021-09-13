@@ -1,4 +1,4 @@
-import { Typography, Container, makeStyles, Avatar } from '@material-ui/core';
+import { Typography, makeStyles, Avatar } from '@material-ui/core';
 
 const useStyles = makeStyles({
 	container: {
@@ -27,7 +27,7 @@ const useStyles = makeStyles({
 	},
 });
 
-const BluAva = ({ teacher, isBlue }) => {
+const Avas = ({ teacher, isBlue }) => {
 	const classes = useStyles();
 	return (
 		<div
@@ -55,4 +55,4 @@ const BluAva = ({ teacher, isBlue }) => {
 	);
 };
 
-export default BluAva;
+export default Avas;
