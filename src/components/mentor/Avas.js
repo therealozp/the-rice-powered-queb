@@ -1,5 +1,5 @@
-import { Typography, makeStyles, Avatar } from '@material-ui/core';
-
+import { Typography, Avatar } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles({
 	container: {
 		marginLeft: 0,

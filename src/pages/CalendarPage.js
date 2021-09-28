@@ -1,6 +1,6 @@
 import React from 'react';
-import { Typography, makeStyles, Grid } from '@material-ui/core';
 import CalendarNavbar from '../components/commons/CalendarNavbar';
+import { makeStyles } from '@mui/material';
 
 const useStyles = makeStyles((theme) => ({
 	bgRoot: {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheets } from '@material-ui/core/styles';
 import { quebTheme } from '../src/themes';
+import { ServerStyleSheets } from '@mui/styles';
 
 export default class MyDocument extends Document {
 	render() {
@@ -25,11 +25,7 @@ export default class MyDocument extends Document {
 						rel="stylesheet"
 					/>
 					<link
-						href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
-						rel="stylesheet"
-					/>
-					<link
-						href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800&display=swap"
+						href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
 						rel="stylesheet"
 					/>
 				</Head>

@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 // non nextjs imports
 import { quebTheme } from '../src/themes';
-import { ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { CssBaseline } from '@mui/material';
+import { ThemeProvider } from '@mui/private-theming';
 import '../styles/globals.css';
 export default function MyApp(props) {
 	const { Component, pageProps } = props;

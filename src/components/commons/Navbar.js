@@ -1,13 +1,7 @@
 import React from 'react';
-import {
-	Button,
-	makeStyles,
-	Typography,
-	AppBar,
-	Toolbar,
-} from '@material-ui/core';
 import Link from 'next/link';
-import { getThemeProps } from '@material-ui/styles';
+import { Button, Typography, AppBar, Toolbar } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
 const appBarHeight = '230px';
 const buttonWidth = '170px';

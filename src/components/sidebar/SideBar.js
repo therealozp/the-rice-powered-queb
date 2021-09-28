@@ -1,14 +1,16 @@
 import React from 'react';
-import { Drawer, Typography, makeStyles } from '@material-ui/core';
+import { Drawer, Typography, makeStyles } from '@mui/material';
 import SidebarButtons from './SidebarButtons';
-import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
-import InsertDriveFileOutlinedIcon from '@material-ui/icons/InsertDriveFileOutlined';
-import AssessmentOutlinedIcon from '@material-ui/icons/AssessmentOutlined';
-import AssessmentRoundedIcon from '@material-ui/icons/AssessmentRounded';
-import FolderOutlinedIcon from '@material-ui/icons/FolderOutlined';
-import FolderIcon from '@material-ui/icons/Folder';
-import MailOutlineOutlinedIcon from '@material-ui/icons/MailOutlineOutlined';
-import MailIcon from '@material-ui/icons/Mail';
+import {
+	InsertDriveFile,
+	InsertDriveFileOutlined,
+	AssessmentOutlined,
+	AssessmentRounded,
+	FolderOutlined,
+	Folder,
+	MailOutlineOutlined,
+	Mail,
+} from '@mui/icons-material';
 import { drawerWidth } from '../../utils/consts';
 
 const useStyles = makeStyles((theme) => ({
@@ -50,12 +52,12 @@ const SideBar = () => {
 					>
 						<SidebarButtons
 							selectedIconComponent={
-								<InsertDriveFileIcon
+								<InsertDriveFile
 									style={{ fontSize: '2em', color: '#68C9BA' }}
 								/>
 							}
 							unselectedIconComponent={
-								<InsertDriveFileOutlinedIcon
+								<InsertDriveFileOutlined
 									style={{ color: '#969CBA', fontSize: '2em' }}
 								/>
 							}
@@ -63,12 +65,12 @@ const SideBar = () => {
 						/>
 						<SidebarButtons
 							selectedIconComponent={
-								<AssessmentRoundedIcon
+								<AssessmentRounded
 									style={{ fontSize: '2em', color: '#68C9BA' }}
 								/>
 							}
 							unselectedIconComponent={
-								<AssessmentOutlinedIcon
+								<AssessmentOutlined
 									style={{ color: '#969CBA', fontSize: '2em' }}
 								/>
 							}
@@ -77,10 +79,10 @@ const SideBar = () => {
 						/>
 						<SidebarButtons
 							selectedIconComponent={
-								<MailIcon style={{ fontSize: '2em', color: '#68C9BA' }} />
+								<Mail style={{ fontSize: '2em', color: '#68C9BA' }} />
 							}
 							unselectedIconComponent={
-								<MailOutlineOutlinedIcon
+								<MailOutlineOutlined
 									style={{ color: '#969CBA', fontSize: '2em' }}
 								/>
 							}
@@ -88,12 +90,10 @@ const SideBar = () => {
 						/>
 						<SidebarButtons
 							selectedIconComponent={
-								<FolderIcon style={{ fontSize: '2em', color: '#68C9BA' }} />
+								<Folder style={{ fontSize: '2em', color: '#68C9BA' }} />
 							}
 							unselectedIconComponent={
-								<FolderOutlinedIcon
-									style={{ color: '#969CBA', fontSize: '2em' }}
-								/>
+								<FolderOutlined style={{ color: '#969CBA', fontSize: '2em' }} />
 							}
 							href="/"
 						/>

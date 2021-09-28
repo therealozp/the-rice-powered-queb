@@ -1,6 +1,8 @@
 import React from 'react';
 import Feature from './Feature';
-import { Typography, makeStyles, Grid } from '@material-ui/core';
+// import { Typography, makeStyles, Grid } from '@material-ui/core';
+import { Typography, Grid } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({
 	title: {

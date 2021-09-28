@@ -1,8 +1,9 @@
 import React from 'react';
 import Avas from './Avas';
-import { Typography, makeStyles, Grid, Button } from '@material-ui/core';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import { Typography, Avatar, Button, Grid } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 import { drawerWidth } from '../../utils/consts';
+import { ArrowForward } from '@mui/icons-material';
 
 const buttonWidth = '210px';
 const buttonHeight = '60px';
@@ -125,7 +126,7 @@ const Mentor = () => {
 				<div className={classes.btnContainer}>
 					<Button
 						className={classes.learnMoreButton}
-						endIcon={<ArrowForwardIcon />}
+						endIcon={<ArrowForward />}
 					>
 						Learn more
 					</Button>

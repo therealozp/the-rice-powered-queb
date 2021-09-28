@@ -1,11 +1,13 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Typography } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 import Link from 'next/link';
 import styles from '../../../styles/footer.module.css';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
+// import FacebookIcon from '@material-ui/icons/Facebook';
+// import InstagramIcon from '@material-ui/icons/Instagram';
+// import MailOutlineIcon from '@material-ui/icons/MailOutline';
+
+import { Facebook, Instagram, MailOutline } from '@mui/icons-material';
 
 const useStyles = makeStyles((theme) => ({
 	footerBg: {
@@ -94,9 +96,9 @@ const Footer = () => {
 						Contact Us
 					</Typography>
 					<div style={{ display: 'flex', flexDirection: 'column' }}>
-						<FacebookIcon className={classes.icons} />
-						<InstagramIcon className={classes.icons} />
-						<MailOutlineIcon className={classes.icons} />
+						<Facebook className={classes.icons} />
+						<Instagram className={classes.icons} />
+						<MailOutline className={classes.icons} />
 					</div>
 				</div>
 				<div style={{ margin: '0 160px' }}>
@@ -107,7 +109,7 @@ const Footer = () => {
 						Follow Us
 					</Typography>
 					<div style={{ display: 'flex', flexDirection: 'column' }}>
-						<FacebookIcon className={classes.icons} />
+						<Facebook className={classes.icons} />
 					</div>
 				</div>
 			</div>

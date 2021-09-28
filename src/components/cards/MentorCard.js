@@ -1,14 +1,10 @@
-import {
-	Card,
-	Typography,
-	makeStyles,
-	Button,
-	Divider,
-} from '@material-ui/core';
+import { Card, Typography, Button, Divider } from '@mui/material';
 import Image from 'next/image';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import PlaylistAddCheckIcon from '@material-ui/icons/PlaylistAddCheck';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+// import FavoriteIcon from '@mui/icons-material/Favorite';
+// import PlaylistAddCheckIcon from '@material-ui/icons/PlaylistAddCheck';
+// import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import { Favorite, PlaylistAddCheck, ArrowForward } from '@mui/icons-material';
+import { makeStyles } from '@mui/styles';
 
 const buttonWidth = '210px';
 const buttonHeight = '50px';
@@ -106,14 +102,14 @@ export default function MentorCard({ subject, name, about }) {
 				<div className={classes.info2}>
 					<Typography className={classes.price}>50.000/hour</Typography>
 					<Typography className={classes.rating}>
-						<FavoriteIcon fontSize="large" />
+						<Favorite fontSize="large" />
 					</Typography>
 					<Typography className={classes.records}>
-						<PlaylistAddCheckIcon fontSize="large" />
+						<PlaylistAddCheck fontSize="large" />
 					</Typography>
 					<Button
 						className={classes.learnMoreButton}
-						endIcon={<ArrowForwardIcon />}
+						endIcon={<ArrowForward />}
 					>
 						Learn more
 					</Button>

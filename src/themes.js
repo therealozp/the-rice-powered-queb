@@ -1,10 +1,10 @@
-import { createTheme } from '@material-ui/core/styles';
+import { createTheme } from '@mui/material';
 
 const quebTheme = createTheme({
 	typography: {
 		// fontFamily: ["Josefin Sans", "cursive"].join(","),
 		fontFamily: [
-			'Noto Sans JP',
+			'"Ubuntu"',
 			'"Helvetica Neue"',
 			'sans-serif',
 			'"Apple Color Emoji"',
