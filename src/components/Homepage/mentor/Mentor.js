@@ -2,7 +2,7 @@ import React from 'react';
 import Avas from './Avas';
 import { Typography, Avatar, Button, Grid } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import { drawerWidth } from '../../utils/consts';
+import { drawerWidth } from '../../../utils/consts';
 import { ArrowForward } from '@mui/icons-material';
 
 const buttonWidth = '210px';
@@ -37,7 +37,7 @@ const oraTeachers = [
 		id: 5,
 	},
 	{
-		name: 'Khoa',
+		name: 'Hiếu',
 		subject: 'Quá',
 		id: 6,
 	},
@@ -45,24 +45,25 @@ const oraTeachers = [
 
 const useStyles = makeStyles((theme) => ({
 	title: {
-		fontFamily: 'Abel',
-		fontSize: '4rem',
-		lineHeight: '130%',
-		color: '#212353',
-		marginLeft: '6vw',
+		fontFamily: 'Raleway',
+		fontStyle: 'normal',
+		fontWeight: '800',
+		fontSize: '90px',
+		lineHeight: '100px',
+		color: '#fff',
+		marginLeft: '8vw'
 	},
 	topcolor: {
-		background: theme.palette.secondary.main,
+		background: "#33150B",
 		width: '100%',
-		height: '20vh',
+		height: '15vh',
+		marginTop: '8vh',
 		display: 'flex',
 		alignItems: 'center',
 	},
 	bottomcolor: {
-		background: '#ffebba',
 		width: '100vw',
-		// height: '75vh',
-		background: theme.palette.themeBrown.main,
+		background: '#FACC5C',
 		padding: '50px 0',
 		display: 'flex',
 		justifyContent: 'center',
@@ -96,7 +97,7 @@ const Mentor = () => {
 		<div>
 			<div className={classes.topcolor}>
 				<Typography className={classes.title} variant="h1">
-					Mentor
+					MENTOR
 				</Typography>
 			</div>
 			<div className={classes.bottomcolor}>

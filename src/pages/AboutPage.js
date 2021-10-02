@@ -49,7 +49,7 @@ const AboutPage = () => {
 						margin: 64,
 					}}
 				>
-					<Typography className={classes.commonTypo}>
+					<Typography align="justify" className={classes.commonTypo}>
 						“Queb chạy bằng cơm” (QCBC) là một dự án nhỏ trực thuộc tổ chức lớn
 						2School Guideline (2SG) - một tổ chức phi lợi nhuận nhằm hướng dẫn,
 						hỗ trợ các em học sinh trong kì thi tuyển sinh vào lớp 10 của Thành
@@ -57,7 +57,7 @@ const AboutPage = () => {
 					</Typography>
 					<br />
 					<br />
-					<Typography className={classes.commonTypo}>
+					<Typography align="justify" className={classes.commonTypo}>
 						“Queb chạy bằng cơm” được thành lập nhằm đáp ứng nhu cầu học tập của
 						học sinh. Ứng dụng công nghệ mới vào công tác giáo dục, chúng tôi sẽ
 						kết nối các học sinh với các thành viên trực thuộc 2SG dưới hình
@@ -69,7 +69,7 @@ const AboutPage = () => {
 					</Typography>
 					<br />
 					<br />
-					<Typography className={classes.commonTypo}>
+					<Typography align="justify" className={classes.commonTypo}>
 						Để duy trì hoạt động, các dịch vụ này sẽ được tính phi và toàn bộ
 						phần lợi nhuận còn lại sau khi chi trả cho các khoản phí cần thiết,
 						2SG sẽ trực tiếp quyên góp cho các quỹ xã hội liên quan đến giáo
@@ -79,28 +79,21 @@ const AboutPage = () => {
 					</Typography>
 					<br />
 					<br />
-					<div>
-						<Typography
-							className={classes.commonTypo}
-							style={{ color: '#782c13', fontWeight: 'bold' }}
-						>
-							Trân trọng,
-						</Typography>
-						<Typography
-							className={classes.commonTypo}
-							style={{ color: '#782c13', fontWeight: 'bold' }}
-						>
-							Đội ngũ 2SG
-						</Typography>
-						<Typography
-							className={classes.commonTypo}
-							style={{ width: '100%' }}
-						>
-							{
-								'>> Để biết thêm về cách sử dụng trang web, vui lòng truy cập “HELP”'
-							}
-						</Typography>
-					</div>
+					<Typography
+						className={classes.commonTypo}
+						style={{ color: '#782c13', fontWeight: 'bold' }}
+					>
+						Trân trọng,
+					</Typography>
+					<Typography
+						className={classes.commonTypo}
+						style={{ color: '#782c13', fontWeight: 'bold' }}
+					>
+						Đội ngũ 2SG.
+					</Typography>
+					<Typography className={classes.commonTypo}>
+						➣ Để biết thêm về cách sử dụng trang web, vui lòng truy cập <a href ='/help'>“HELP"</a>.
+					</Typography>
 				</div>
 			</Container>
 			<div className={classes.customImage2}>

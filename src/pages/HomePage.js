@@ -1,20 +1,23 @@
 import React from 'react';
-// import SideBar from '../components/sidebar/SideBar';
-import Mentor from '../components/mentor/Mentor';
-import Features from '../components/features/Features';
-// import MentorCard from '../components/mentorcard/mentorcard';
+import Intro from '../components/Homepage/intro/Intro';
+import AboutUs from '../components/Homepage/about/AboutUs';
+import Help from '../components/Homepage/help/Help';
+import Mentor from '../components/Homepage/mentor/Mentor';
+import Features from '../components/Homepage/features/Features';
 import dynamic from 'next/dynamic';
 import MentorPage from './home/MentorPage';
 import CommonLayout from '../layouts/CommonLayout';
 
-// const CommonLayout = dynamic(() => import('../layouts/CommonLayout'));
+
 
 const HomePage = () => {
 	return (
 		<CommonLayout>
-			<Mentor />
+			<Intro />
+			<AboutUs />
+			<Help />
 			<Features />
-			<MentorPage />
+			<Mentor />
 		</CommonLayout>
 	);
 };

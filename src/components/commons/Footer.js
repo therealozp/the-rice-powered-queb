@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 const footerLinks = [
 	{
 		name: 'Home',
-		href: '/home',
+		href: '/',
 	},
 	{
 		name: 'Guides',
@@ -54,6 +54,10 @@ const footerLinks = [
 	{
 		name: 'Mentors',
 		href: '/mentors',
+	},
+	{
+		name: 'Contact',
+		href: '/contact'
 	},
 	{
 		name: 'Make a booking!',

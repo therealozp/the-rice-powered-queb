@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Button, Typography, AppBar, Toolbar } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
-const appBarHeight = '230px';
+const appBarHeight = '70px';
 const buttonWidth = '170px';
 const buttonHeight = '50px';
 const useStyles = makeStyles((theme) => ({
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	appBarPaper: {
 		background: theme.palette.themeBrown.main,
-		// height: appBarHeight,
+		height: appBarHeight,
 	},
 	toolbarmargin: { ...theme.mixins.toolbar },
 }));
@@ -78,13 +78,17 @@ const navLinks = [
 		href: '/help',
 	},
 	{
-		name: 'Guides',
-		href: '/guides',
+		name: 'Features',
+		href: '/features',
 	},
 	{
 		name: 'See our mentors',
 		href: '/mentors',
 	},
+	{
+		name: 'Contact',
+		href: '/contact'
+	}
 ];
 
 const LinkComp = ({ href, name }) => {

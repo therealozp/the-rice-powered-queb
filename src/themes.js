@@ -18,7 +18,7 @@ const quebTheme = createTheme({
 			dark: '#212b30',
 		},
 		secondary: {
-			main: '#FCAA44',
+			main: '#FACC5C',
 		},
 		themeGreen: {
 			main: '#6B9589',

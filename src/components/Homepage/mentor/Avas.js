@@ -1,3 +1,4 @@
+import React from 'react';
 import { Typography, Avatar } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles({
