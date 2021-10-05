@@ -68,10 +68,13 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function MentorCard({ subject, name, about }) {
+export default function MentorCard({ subject, name, about, isMentorPage }) {
 	const classes = useStyles();
 	return (
-		<Card className={classes.root}>
+		<Card
+			style={{ width: isMentorPage ? '90vw' : '75vw' }}
+			className={classes.root}
+		>
 			<div className={classes.header}>
 				<Image
 					src="/OraAva.svg"

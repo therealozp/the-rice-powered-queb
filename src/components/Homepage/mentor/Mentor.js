@@ -45,18 +45,18 @@ const oraTeachers = [
 
 const useStyles = makeStyles((theme) => ({
 	title: {
-		fontFamily: 'Raleway',
+		fontFamily: 'Abel',
 		fontStyle: 'normal',
-		fontWeight: '800',
-		fontSize: '90px',
+		fontSize: '72px',
 		lineHeight: '100px',
 		color: '#fff',
-		marginLeft: '8vw'
+		marginLeft: '8vw',
+		marginTop: '-50px',
 	},
 	topcolor: {
-		background: "#33150B",
+		background: '#33150B',
 		width: '100%',
-		height: '15vh',
+		height: '30vh',
 		marginTop: '8vh',
 		display: 'flex',
 		alignItems: 'center',
@@ -97,11 +97,11 @@ const Mentor = () => {
 		<div>
 			<div className={classes.topcolor}>
 				<Typography className={classes.title} variant="h1">
-					MENTOR
+					Mentor
 				</Typography>
 			</div>
 			<div className={classes.bottomcolor}>
-				<Grid container justifyContent="center" style={{ paddingTop: '2vh' }}>
+				<Grid container justifyContent="center" style={{ marginTop: '-15vh' }}>
 					{bluTeachers.map((teacher) => (
 						<Grid item key={teacher.id} xs={12} sm={6} md={4}>
 							<Avas

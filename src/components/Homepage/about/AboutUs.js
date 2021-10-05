@@ -1,54 +1,46 @@
-import React from "react";
-import { Typography, Button } from "@mui/material";
-import { makeStyles } from "@mui/styles";
-import { ArrowForward } from "@mui/icons-material";
-import Image from "next/image"
+import React from 'react';
+import { Typography, Button } from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import { ArrowForward } from '@mui/icons-material';
+import Image from 'next/image';
+import { Box } from '@mui/system';
 
 const buttonWidth = '220px';
 const buttonHeight = '60px';
-const appBarHeight = '65px';
 
-const useStyles = makeStyles(theme => ({
-    root: {
-        width: '100vw',
-        height: `calc(100vh - ${appBarHeight})`,
-        background: '#FACC5C',
-        display: 'flex'
-    },
-    container: {
-        width: '30vw',
-        height: '70vh',
-        marginLeft: "8vw",
-        marginTop: '8vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-    },
-    imageContainer: {
-        width: '47vw',
-        height: `calc(95vh - ${appBarHeight})`,
-        marginLeft: 'auto',
-        marginTop: '5vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'flex-end',
-        alignItems: 'flex-end'
-    },
-    title: {
-		fontFamily: 'Raleway',
+const useStyles = makeStyles((theme) => ({
+	root: {
+		position: 'relative',
+		display: 'grid',
+		gridTemplateColumns: '40% 60% ',
+		width: '100vw',
+		height: '96vh',
+		background: '#FACC5C',
+	},
+	container: {
+		marginLeft: '8vw',
+		marginTop: '8vh',
+		width: '90%',
+	},
+	imageContainer: {
+		position: 'absolute',
+		right: 0,
+		bottom: -7,
+	},
+	title: {
+		fontFamily: 'Abel',
 		fontStyle: 'normal',
 		fontWeight: '800',
 		fontSize: '90px',
 		lineHeight: '100px',
 	},
-    body: {
-        fontFamily: 'Roboto',
-        fontStyle: 'normal',
-        fontWeight: 'normal',
-        fontSize: '26px',
-        lineHeight: '30px',
-    },
-    learnMoreButton: {
+	body: {
+		fontStyle: 'normal',
+		fontWeight: 'normal',
+		fontSize: '18px',
+		lineHeight: '30px',
+	},
+	learnMoreButton: {
 		backgroundColor: theme.palette.themeGreen.main,
 		color: '#FFFFFF',
 		textTransform: 'capitalize',
@@ -56,37 +48,44 @@ const useStyles = makeStyles(theme => ({
 		height: buttonHeight,
 		borderRadius: 100,
 		fontSize: '1em',
-        alignSelf: 'center'
+		margin: 64,
 	},
-}))
+}));
 
 const AboutUs = () => {
-    const classes = useStyles()
-    return ( 
-        <div className={classes.root}>
-            <div className={classes.container}>
-                <Typography className={classes.title} variant='h1'>
-                    ABOUT US
-                </Typography>
-                <Typography className={classes.body} align="justify">
-                    “Queb chạy bằng cơm” (QCBC) là một dự án nhỏ 
-                    trực thuộc tổ chức lớn 2school Guideline (2SG)
-                    - một tổ chức phi lợi nhuận nhằm hướng dẫn, hỗ
-                    trợ các em học sinh trong kì thi tuyển sinh vào
-                    lớp 10 của Thành phố Hồ Chí Minh...
-                </Typography>
-                <Button
-                    className={classes.learnMoreButton}
-                    endIcon={<ArrowForward fontSize="large" />}
-                >
-                    Learn more
-                </Button>
-            </div>
-            <div className={classes.imageContainer}>
-                <Image src='/MascotHp2.svg' width={790} height={800} />
-            </div>
-        </div>
-    );
-}
- 
+	const classes = useStyles();
+	return (
+		<div className={classes.root}>
+			<div className={classes.container}>
+				<Typography className={classes.title} variant="h1">
+					ABOUT US
+				</Typography>
+				<div style={{ marginTop: '15vh' }}>
+					<Typography className={classes.body}>
+						“Queb chạy bằng cơm” (QCBC) là một dự án nhỏ trực thuộc tổ chức lớn
+						2school Guideline (2SG) - một tổ chức phi lợi nhuận nhằm hướng dẫn,
+						hỗ trợ các em học sinh trong kì thi tuyển sinh vào lớp 10 của Thành
+						phố Hồ Chí Minh...
+					</Typography>
+					<Button
+						className={classes.learnMoreButton}
+						endIcon={<ArrowForward fontSize="large" />}
+					>
+						Learn more
+					</Button>
+				</div>
+			</div>
+
+			<div className={classes.imageContainer}>
+				<Image
+					src="/MascotHp2.svg"
+					width={600}
+					height={610}
+					alt="HomePage mascot 2"
+				/>
+			</div>
+		</div>
+	);
+};
+
 export default AboutUs;
