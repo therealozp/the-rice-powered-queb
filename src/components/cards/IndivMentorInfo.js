@@ -1,6 +1,4 @@
 import { Card, Typography, Divider } from '@mui/material';
-import Image from 'next/image';
-import { Favorite, PlaylistAddCheck } from '@mui/icons-material';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -16,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: 'Raleway',
         fontStyle: 'normal',
         fontWeight: '800',
-        fontSize: '70px',
+        fontSize: '3.5rem',
         lineHeight: '106px',
         color: '#33150B',
     },
@@ -26,11 +24,15 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		flexDirection: 'column',
 	},
-	typo: {
+	dividerColor: {
+        backgroundColor: theme.palette.secondary.main,
+        height: '2.5px'
+    },
+    typo: {
         fontFamily: 'Raleway',
         fontStyle: 'normal',
         fontWeight: '600',
-        fontSize: '35px',
+        fontSize: '1.25rem',
         lineHeight: '160%',
     },
     avalability: {
@@ -71,6 +73,7 @@ export default function IndivMentorInfo({
                 <Typography className={classes.typo}>✧ Mô tả bản thân: {descript}</Typography>
                 <br />
                 <br />
+                <Divider classes={{root: classes.dividerColor}} variant='fullwidth' />
                 <br />
                 <Typography className={classes.title}>AVAILABILITY</Typography>
                 <div className={classes.avalability}></div>

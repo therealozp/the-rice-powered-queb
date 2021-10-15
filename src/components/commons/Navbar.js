@@ -70,6 +70,10 @@ const useStyles = makeStyles((theme) => ({
 
 const navLinks = [
 	{
+		name: 'Home',
+		href: '/',
+	},
+	{
 		name: 'About',
 		href: '/about',
 	},
@@ -130,8 +134,8 @@ const Navbar = () => {
 							))}
 						</div>
 						<div className={classes.container1}>
-							<Button className={classes.signInButton}>Sign in</Button>
-							<Button className={classes.signUpButton}>Sign up</Button>
+							<Button className={classes.signInButton} href='/signin'>Sign in</Button>
+							<Button className={classes.signUpButton} href='/signup'>Sign up</Button>
 						</div>
 					</div>
 				</Toolbar>

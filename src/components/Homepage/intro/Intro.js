@@ -30,12 +30,12 @@ const useStyles = makeStyles((theme) => ({
 	},
 	title: {
 		fontFamily: 'Abel',
-		fontSize: '90px',
+		fontSize: '4rem',
 		lineHeight: '100px',
 	},
 	body: {
 		fontStyle: 'normal',
-		fontSize: '35px',
+		fontSize: '1.8rem',
 		lineHeight: '160%',
 		color: '#4B5D68',
 	},
@@ -62,6 +62,7 @@ const Intro = () => {
 				<Button
 					className={classes.findMentorsButton}
 					endIcon={<ArrowForward fontSize="large" />}
+					href="/mentors"
 				>
 					Find Mentors
 				</Button>

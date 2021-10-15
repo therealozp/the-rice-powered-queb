@@ -33,12 +33,12 @@ const useStyles = makeStyles((theme) => ({
 		fontFamily: 'Abel',
 		fontStyle: 'normal',
 		fontWeight: '800',
-		fontSize: '90px',
+		fontSize: '4rem',
 		lineHeight: '100px',
 		alignSelf: 'center',
 	},
 	body: {
-		fontSize: '18px',
+		fontSize: '1.5rem',
 		lineHeight: '30px',
 	},
 	learnMoreButton: {

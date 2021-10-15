@@ -47,7 +47,8 @@ const useStyles = makeStyles((theme) => ({
 	title: {
 		fontFamily: 'Abel',
 		fontStyle: 'normal',
-		fontSize: '72px',
+		fontWeight: '800',
+		fontSize: '4rem',
 		lineHeight: '100px',
 		color: '#fff',
 		marginLeft: '8vw',
@@ -128,6 +129,7 @@ const Mentor = () => {
 					<Button
 						className={classes.learnMoreButton}
 						endIcon={<ArrowForward />}
+						href="/mentors"
 					>
 						Learn more
 					</Button>

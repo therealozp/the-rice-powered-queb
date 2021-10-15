@@ -31,13 +31,13 @@ const useStyles = makeStyles((theme) => ({
 		fontFamily: 'Abel',
 		fontStyle: 'normal',
 		fontWeight: '800',
-		fontSize: '90px',
+		fontSize: '4rem',
 		lineHeight: '100px',
 	},
 	body: {
 		fontStyle: 'normal',
 		fontWeight: 'normal',
-		fontSize: '18px',
+		fontSize: '1.5rem',
 		lineHeight: '30px',
 	},
 	learnMoreButton: {
@@ -60,22 +60,20 @@ const AboutUs = () => {
 				<Typography className={classes.title} variant="h1">
 					ABOUT US
 				</Typography>
-				<div style={{ marginTop: '15vh' }}>
-					<Typography className={classes.body}>
-						“Queb chạy bằng cơm” (QCBC) là một dự án nhỏ trực thuộc tổ chức lớn
-						2school Guideline (2SG) - một tổ chức phi lợi nhuận nhằm hướng dẫn,
-						hỗ trợ các em học sinh trong kì thi tuyển sinh vào lớp 10 của Thành
-						phố Hồ Chí Minh...
-					</Typography>
-					<Button
-						className={classes.learnMoreButton}
-						endIcon={<ArrowForward fontSize="large" />}
-					>
-						Learn more
-					</Button>
-				</div>
+				<Typography className={classes.body} align="justify">
+					“Queb chạy bằng cơm” (QCBC) là một dự án nhỏ trực thuộc tổ chức lớn
+					2school Guideline (2SG) - một tổ chức phi lợi nhuận nhằm hướng dẫn, hỗ
+					trợ các em học sinh trong kì thi tuyển sinh vào lớp 10 của Thành phố
+					Hồ Chí Minh...
+				</Typography>
+				<Button
+					className={classes.learnMoreButton}
+					endIcon={<ArrowForward fontSize="large" />}
+					href="/about"
+				>
+					Learn more
+				</Button>
 			</div>
-
 			<div className={classes.imageContainer}>
 				<Image
 					src="/MascotHp2.svg"
@@ -87,5 +85,4 @@ const AboutUs = () => {
 		</div>
 	);
 };
-
 export default AboutUs;

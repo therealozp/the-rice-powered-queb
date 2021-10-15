@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
 		fontFamily: 'Raleway',
 		fontStyle: 'normal',
 		fontWeight: '800',
-		fontSize: '90px',
+		fontSize: '4rem',
 		lineHeight: '100px',
 		marginTop: '8vh',
 		marginLeft: '8vw',
