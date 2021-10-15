@@ -34,14 +34,14 @@ const useStyles = makeStyles((theme) => ({
 		fontFamily: 'Raleway',
 		fontStyle: 'normal',
 		fontWeight: '800',
-		fontSize: '90px',
+		fontSize: '4rem',
 		lineHeight: '100px',
 	},
     body: {
         fontFamily: 'Abhaya Libre ExtraBold',
         fontStyle: 'normal',
         fontWeight: '800',
-        fontSize: '35px',
+        fontSize: '1.8rem',
         lineHeight: '160%',
         color: '#4B5D68'
     },
@@ -74,6 +74,7 @@ const Intro = () => {
                 <Button
                     className={classes.findMentorsButton}
                     endIcon={<ArrowForward fontSize="large" />}
+                    href='/mentors'
                 >
                     Find Mentors
                 </Button>

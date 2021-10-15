@@ -38,14 +38,14 @@ const useStyles = makeStyles(theme => ({
 		fontFamily: 'Raleway',
 		fontStyle: 'normal',
 		fontWeight: '800',
-		fontSize: '90px',
+		fontSize: '4rem',
 		lineHeight: '100px',
 	},
     body: {
         fontFamily: 'Roboto',
         fontStyle: 'normal',
         fontWeight: 'normal',
-        fontSize: '26px',
+        fontSize: '1.5rem',
         lineHeight: '30px',
     },
     learnMoreButton: {
@@ -78,6 +78,7 @@ const AboutUs = () => {
                 <Button
                     className={classes.learnMoreButton}
                     endIcon={<ArrowForward fontSize="large" />}
+                    href='/about'
                 >
                     Learn more
                 </Button>
@@ -88,5 +89,4 @@ const AboutUs = () => {
         </div>
     );
 }
- 
 export default AboutUs;

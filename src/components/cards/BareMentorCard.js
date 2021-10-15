@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '50px'
 	},
 	price: {
-        fontSize: '2.25rem'
+        fontSize: '2rem'
     },
 	rating: {
 		alignSelf: 'flex-start',
@@ -74,7 +74,7 @@ export default function BareMentorCard({ subject, name, about }) {
 						<Typography className={classes.name}>{name}</Typography>
 						<Typography
 							className={classes.description}
-							style={{ marginBottom: '2rem', fontSize: '2rem' }}
+							style={{ marginBottom: '2rem', fontSize: '1.6rem' }}
 						>
 							About me: {about}
 						</Typography>

@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
 		fontFamily: 'Raleway',
 		fontStyle: 'normal',
 		fontWeight: '800',
-		fontSize: '90px',
+		fontSize: '4rem',
 		lineHeight: '100px',
         alignSelf: 'center'
 	},
@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
         fontFamily: 'Roboto',
         fontStyle: 'normal',
         fontWeight: 'normal',
-        fontSize: '26px',
+        fontSize: '1.5rem',
         lineHeight: '30px',
     },
     learnMoreButton: {
@@ -79,6 +79,7 @@ const Help = () => {
                 <Button
                     className={classes.learnMoreButton}
                     endIcon={<ArrowForward fontSize="large" />}
+                    href='/help'
                 >
                     Learn more
                 </Button>

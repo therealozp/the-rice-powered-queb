@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 		fontFamily: "Raleway",
 		fontStyle: "normal",
 		fontWeight: "800",
-		fontSize: "24px",
+		fontSize: "1.5rem",
 		lineHeight: "28px",
 		color: "#33150B",
 	}
@@ -61,6 +61,7 @@ const FeatureOra = ({ order, title, src }) => {
 						disableElevation
 						className={classes.learnMoreButton}
 						endIcon={<ArrowForward />}
+						href='/features'
 					>
 						Learn more
 					</Button>

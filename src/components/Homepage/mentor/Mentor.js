@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
 		fontFamily: 'Raleway',
 		fontStyle: 'normal',
 		fontWeight: '800',
-		fontSize: '90px',
+		fontSize: '4rem',
 		lineHeight: '100px',
 		color: '#fff',
 		marginLeft: '8vw'
@@ -128,6 +128,7 @@ const Mentor = () => {
 					<Button
 						className={classes.learnMoreButton}
 						endIcon={<ArrowForward />}
+						href='/mentors'
 					>
 						Learn more
 					</Button>

@@ -1,7 +1,7 @@
 import React from 'react';
 import PriceTable from '../components/pricetable/PriceTable';
 import { makeStyles } from '@mui/styles';
-import { Container, Link, Typography } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import Image from 'next/image';
 
 const useStyles = makeStyles((theme) => ({
@@ -163,5 +163,4 @@ const FeaturesPage = () => {
 		</div>
 	);
 };
-
 export default FeaturesPage;
