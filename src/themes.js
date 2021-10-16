@@ -2,15 +2,7 @@ import { createTheme } from '@mui/material';
 
 const quebTheme = createTheme({
 	typography: {
-		// fontFamily: ["Josefin Sans", "cursive"].join(","),
-		fontFamily: [
-			'"Ubuntu"',
-			'"Helvetica Neue"',
-			'sans-serif',
-			'"Apple Color Emoji"',
-			'"Segoe UI Emoji"',
-			'"Segoe UI Symbol"',
-		].join(','),
+		fontFamily: ['"IBM Plex Sans"', '"Poppins"', '"PT Sans"'].join(','),
 	},
 	palette: {
 		primary: {
@@ -25,6 +17,18 @@ const quebTheme = createTheme({
 		},
 		themeBrown: {
 			main: '#33150B',
+		},
+		chipYellow: {
+			main: '#D1941A',
+		},
+		chipGreen: {
+			main: '#37833B',
+		},
+		chipRed: {
+			main: '#C8372D',
+		},
+		themeYellow: {
+			main: '#FCAA44',
 		},
 	},
 });

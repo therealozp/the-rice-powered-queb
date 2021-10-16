@@ -35,8 +35,6 @@ const useStyles = makeStyles((theme) => ({
 		lineHeight: '100px',
 	},
 	body: {
-		fontStyle: 'normal',
-		fontWeight: 'normal',
 		fontSize: '1.5rem',
 		lineHeight: '30px',
 	},
@@ -60,7 +58,7 @@ const AboutUs = () => {
 				<Typography className={classes.title} variant="h1">
 					ABOUT US
 				</Typography>
-				<Typography className={classes.body} align="justify">
+				<Typography className={classes.body}>
 					“Queb chạy bằng cơm” (QCBC) là một dự án nhỏ trực thuộc tổ chức lớn
 					2school Guideline (2SG) - một tổ chức phi lợi nhuận nhằm hướng dẫn, hỗ
 					trợ các em học sinh trong kì thi tuyển sinh vào lớp 10 của Thành phố

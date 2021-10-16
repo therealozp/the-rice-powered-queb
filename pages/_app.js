@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 // non nextjs imports
+import { ThemeProvider } from '@mui/material/styles';
 import { quebTheme } from '../src/themes';
 import { CssBaseline } from '@mui/material';
-import { ThemeProvider } from '@mui/private-theming';
 import '../styles/globals.css';
 export default function MyApp(props) {
 	const { Component, pageProps } = props;
