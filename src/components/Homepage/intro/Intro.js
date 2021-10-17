@@ -10,6 +10,7 @@ const appBarHeight = '65px';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
+		height: '100vh',
 		width: '100vw',
 		display: 'flex',
 	},

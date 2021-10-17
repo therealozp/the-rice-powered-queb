@@ -1,7 +1,6 @@
 import React from 'react';
 import MentorCard from '../components/cards/MentorCard';
 import IndivMentorInfo from '../components/cards/IndivMentorInfo';
-import { Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({

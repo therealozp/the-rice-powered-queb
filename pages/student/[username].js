@@ -2,6 +2,7 @@ import React from 'react';
 import CommonLayout from '../../src/layouts/CommonLayout';
 import ReminderPanel from '../../src/components/infocards/ReminderPanel';
 import { Box } from '@mui/system';
+import MenteesPage from '../../src/components/menteesPage/menteesPage';
 
 const username = () => {
 	return (
@@ -13,8 +14,7 @@ const username = () => {
 					background: '#ffcd8f',
 				}}
 			>
-				<Box />
-				{/* Put the menteesPage here */}
+				<MenteesPage />
 				<Box sx={{ display: 'flex', justifyContent: 'center', padding: 8 }}>
 					<ReminderPanel />
 				</Box>

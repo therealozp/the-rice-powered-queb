@@ -100,6 +100,7 @@ const FeatureOra = ({ order, title, src }) => {
 							disableElevation
 							className={classes.learnMoreButton}
 							endIcon={<ArrowForward />}
+							href ={'/features'}
 						>
 							Learn more
 						</Button>
@@ -122,6 +123,7 @@ const FeatureOra = ({ order, title, src }) => {
 						color="secondary"
 						className={classes.learnMoreButton}
 						endIcon={<ArrowForward />}
+						href ={'/features'}
 					>
 						Learn more
 					</Button>

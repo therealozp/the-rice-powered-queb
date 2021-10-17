@@ -9,5 +9,4 @@ const help = () => {
 		</CommonLayout>
 	);
 };
-
 export default help;

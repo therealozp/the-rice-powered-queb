@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
 		lineHeight: '30px',
 	},
 	learnMoreButton: {
+		backgroundColor: theme.palette.secondary.main,
 		color: '#FFFFFF',
 		textTransform: 'capitalize',
 		width: buttonWidth,
@@ -49,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
 		borderRadius: 100,
 		fontSize: '1em',
 		margin: 64,
+		marginLeft: 0
 	},
 }));
 
@@ -72,6 +74,7 @@ const Help = () => {
 						className={classes.learnMoreButton}
 						endIcon={<ArrowForward fontSize="large" />}
 						color="secondary"
+						href='/help'
 					>
 						Learn more
 					</Button>
