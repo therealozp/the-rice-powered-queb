@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import {
 	Button,
 	Typography,
-	Input,
 	FormControl,
-	IconButton,
 	InputLabel,
 	OutlinedInput,
 	FormLabel,
@@ -14,12 +12,11 @@ import {
 	RadioGroup,
 } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import Image from 'next/image';
 import { DesktopDatePicker, LocalizationProvider } from '@mui/lab';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import { yellow } from '@mui/material/colors';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	bgRoot: {
 		background: '#FACC5C',
 		width: '100vw',

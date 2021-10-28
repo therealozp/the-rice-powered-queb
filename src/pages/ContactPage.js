@@ -6,14 +6,14 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import FeedbackIcon from '@mui/icons-material/Feedback';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	commonTypo: {
 		width: '80%',
 		fontFamily: 'Raleway',
-        fontStyle: 'normal',
-        fontWeight: 'normal',
-        fontSize: '40px',
-        lineHeight: '50px',
+		fontStyle: 'normal',
+		fontWeight: 'normal',
+		fontSize: '40px',
+		lineHeight: '50px',
 	},
 	heading: {
 		fontSize: '4rem',
@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
 		margin: '16px 10vw ',
 	},
 	customImage: {
-        marginLeft: '20px'
-	}
+		marginLeft: '20px',
+	},
 }));
 
 const ContactPage = () => {
@@ -38,25 +38,30 @@ const ContactPage = () => {
 						flexDirection: 'column',
 						alignItems: 'center',
 						margin: 64,
-                        marginBottom: '0'
+						marginBottom: '0',
 					}}
 				>
 					<Typography className={classes.commonTypo}>
-						<MailOutlineIcon fontSize='large'/> Email: 2schoolguideline@gmail.com
+						<MailOutlineIcon fontSize="large" /> Email:
+						2schoolguideline@gmail.com
 					</Typography>
 					<br />
 					<Typography className={classes.commonTypo}>
-						<FacebookIcon fontSize='large'/> Fanpage Facebook: <a href='https://www.facebook.com/2schoolguideline'> 2School Guideline</a>
+						<FacebookIcon fontSize="large" /> Fanpage Facebook:{' '}
+						<a href="https://www.facebook.com/2schoolguideline">
+							{' '}
+							2School Guideline
+						</a>
 					</Typography>
 					<br />
 					<Typography className={classes.commonTypo}>
-						<FeedbackIcon fontSize='large'/> <a>Form Feedback</a>
+						<FeedbackIcon fontSize="large" /> <a>Form Feedback</a>
 					</Typography>
 					<br />
 					<br />
 				</div>
 			</Container>
-            <div className={classes.customImage}>
+			<div className={classes.customImage}>
 				<Image
 					src="/ContactImg.svg"
 					alt="garden"

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
 	Button,
-	TextField,
 	Typography,
 	Input,
 	FormControl,
@@ -9,11 +8,7 @@ import {
 	InputLabel,
 } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import {
-	CenterFocusStrong,
-	Visibility,
-	VisibilityOff,
-} from '@mui/icons-material';
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 import Image from 'next/image';
 
 const useStyles = makeStyles((theme) => ({
@@ -57,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const SignInWith = ({ imgSrc, providerName }) => {
-	const classes = useStyles();
+	// const classes = useStyles();
 	return (
 		<div
 			style={{

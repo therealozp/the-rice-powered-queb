@@ -1,3 +1,4 @@
+import React from 'react';
 import { Card, Typography, Button, Divider } from '@mui/material';
 import Image from 'next/image';
 // import FavoriteIcon from '@mui/icons-material/Favorite';

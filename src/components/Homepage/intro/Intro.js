@@ -6,7 +6,6 @@ import { ArrowForward } from '@mui/icons-material';
 
 const buttonWidth = '220px';
 const buttonHeight = '60px';
-const appBarHeight = '65px';
 
 const useStyles = makeStyles((theme) => ({
 	root: {

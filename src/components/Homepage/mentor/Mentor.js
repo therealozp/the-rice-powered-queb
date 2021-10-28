@@ -1,8 +1,7 @@
 import React from 'react';
 import Avas from './Avas';
-import { Typography, Avatar, Button, Grid } from '@mui/material';
+import { Typography, Button, Grid } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import { drawerWidth } from '../../../utils/consts';
 import { ArrowForward } from '@mui/icons-material';
 
 const buttonWidth = '210px';

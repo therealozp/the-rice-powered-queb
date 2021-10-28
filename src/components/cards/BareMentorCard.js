@@ -1,9 +1,10 @@
+import React from 'react';
 import { Card, Typography, Divider } from '@mui/material';
 import Image from 'next/image';
 import { Favorite, PlaylistAddCheck } from '@mui/icons-material';
 import { makeStyles } from '@mui/styles';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	root: {
 		borderRadius: '40px',
 		width: '90vw',
@@ -40,12 +41,12 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		flexDirection: 'column',
 		alignItems: 'center',
-        fontSize: '2.25rem',
-        marginTop: '50px'
+		fontSize: '2.25rem',
+		marginTop: '50px',
 	},
 	price: {
-        fontSize: '2rem'
-    },
+		fontSize: '2rem',
+	},
 	rating: {
 		alignSelf: 'flex-start',
 		margin: '50px 0',

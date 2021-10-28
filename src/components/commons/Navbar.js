@@ -91,8 +91,8 @@ const navLinks = [
 	},
 	{
 		name: 'Contact',
-		href: '/contact'
-	}
+		href: '/contact',
+	},
 ];
 
 const LinkComp = ({ href, name }) => {
@@ -129,13 +129,17 @@ const Navbar = () => {
 								marginRight: 50,
 							}}
 						>
-							{navLinks.map((d, i) => (
+							{navLinks.map((d) => (
 								<LinkComp href={d.href} name={d.name} key={d.name} />
 							))}
 						</div>
 						<div className={classes.container1}>
-							<Button className={classes.signInButton} href='/signin'>Sign in</Button>
-							<Button className={classes.signUpButton} href='/signup'>Sign up</Button>
+							<Button className={classes.signInButton} href="/signin">
+								Sign in
+							</Button>
+							<Button className={classes.signUpButton} href="/signup">
+								Sign up
+							</Button>
 						</div>
 					</div>
 				</Toolbar>

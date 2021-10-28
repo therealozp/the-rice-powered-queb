@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Button, Typography, Card } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { ArrowForward } from '@mui/icons-material';
 import { Box } from '@mui/system';
@@ -8,7 +8,7 @@ import { Box } from '@mui/system';
 const buttonWidth = '210px';
 const buttonHeight = '60px';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	container: {
 		display: 'flex',
 		flexDirection: 'column',
@@ -84,7 +84,6 @@ const FeatureOra = ({ order, title, src }) => {
 							display: 'flex',
 							flexDirection: 'column',
 							alignItems: 'center',
-							flexDirection: 'column',
 						}}
 					>
 						<Typography className={classes.title}>{title}</Typography>
@@ -100,7 +99,7 @@ const FeatureOra = ({ order, title, src }) => {
 							disableElevation
 							className={classes.learnMoreButton}
 							endIcon={<ArrowForward />}
-							href ={'/features'}
+							href={'/features'}
 						>
 							Learn more
 						</Button>
@@ -123,7 +122,7 @@ const FeatureOra = ({ order, title, src }) => {
 						color="secondary"
 						className={classes.learnMoreButton}
 						endIcon={<ArrowForward />}
-						href ={'/features'}
+						href={'/features'}
 					>
 						Learn more
 					</Button>

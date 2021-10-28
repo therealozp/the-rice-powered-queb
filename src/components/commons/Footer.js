@@ -57,7 +57,7 @@ const footerLinks = [
 	},
 	{
 		name: 'Contact',
-		href: '/contact'
+		href: '/contact',
 	},
 	{
 		name: 'Make a booking!',
@@ -88,7 +88,7 @@ const Footer = () => {
 					>
 						Menu
 					</Typography>
-					{footerLinks.map((d, i) => (
+					{footerLinks.map((d) => (
 						<LinkComp href={d.href} name={d.name} key={d.name} />
 					))}
 				</div>

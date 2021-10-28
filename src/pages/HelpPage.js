@@ -117,9 +117,9 @@ const HelpPage = () => {
 					</Typography>
 					<br />
 					<br />
-					<Typography 
-						style={{fontWeight: 'bold'}} 
-						align="justify" 
+					<Typography
+						style={{ fontWeight: 'bold' }}
+						align="justify"
 						className={classes.commonTypo}
 					>
 						Lưu ý: Luôn đặt lịch sớm hơn ít nhất 04 ngày trước ngày đăng kí học.
@@ -134,9 +134,9 @@ const HelpPage = () => {
 					</Typography>
 					<br />
 					<br />
-					<Typography 
-						style={{fontWeight: 'bold'}} 
-						align="justify" 
+					<Typography
+						style={{ fontWeight: 'bold' }}
+						align="justify"
 						className={classes.commonTypo}
 					>
 						Lưu ý: Đối với các bạn đăng kí gói học bằng tài liệu có sẵn hoặc
@@ -147,7 +147,8 @@ const HelpPage = () => {
 					<br />
 					<Typography align="justify" className={classes.commonTypo}>
 						Mọi ý kiến thắc mắc và phản hồi về “Queb chạy bằng cơm”, vui lòng
-						liên lạc qua thông tin ở phần <a href='/contact'>"CONTACT"</a>.
+						liên lạc qua thông tin ở phần{' '}
+						<a href="/contact">&quot;CONTACT&quot;</a>.
 					</Typography>
 					<br />
 					<br />

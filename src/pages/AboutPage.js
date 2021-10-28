@@ -3,7 +3,7 @@ import { makeStyles } from '@mui/styles';
 import { Container, Typography } from '@mui/material';
 import Image from 'next/image';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	commonTypo: {
 		width: '65%',
 		fontSize: '1.2rem',
@@ -92,7 +92,8 @@ const AboutPage = () => {
 						Đội ngũ 2SG.
 					</Typography>
 					<Typography className={classes.commonTypo}>
-						➣ Để biết thêm về cách sử dụng trang web, vui lòng truy cập <a href ='/help'>“HELP"</a>.
+						➣ Để biết thêm về cách sử dụng trang web, vui lòng truy cập{' '}
+						<a href="/help">&quot;HELP&quot;</a>.
 					</Typography>
 				</div>
 			</Container>

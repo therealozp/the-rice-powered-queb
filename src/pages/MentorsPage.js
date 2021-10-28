@@ -9,7 +9,7 @@ import {
 	Typography,
 } from '@mui/material';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	rootBg: {
 		background: '#FED7A6',
 		width: '100vw',

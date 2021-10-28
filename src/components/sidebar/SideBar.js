@@ -1,5 +1,6 @@
 import React from 'react';
-import { Drawer, Typography, makeStyles } from '@mui/material';
+import { Drawer } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 import SidebarButtons from './SidebarButtons';
 import {
 	InsertDriveFile,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { borderRadius, Box } from '@mui/system';
+import { Box } from '@mui/system';
 import { Typography, Avatar } from '@mui/material';
 import BedtimeOutlinedIcon from '@mui/icons-material/BedtimeOutlined';
 import CoronavirusOutlinedIcon from '@mui/icons-material/CoronavirusOutlined';

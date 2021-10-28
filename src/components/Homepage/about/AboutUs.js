@@ -3,7 +3,6 @@ import { Typography, Button } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { ArrowForward } from '@mui/icons-material';
 import Image from 'next/image';
-import { Box } from '@mui/system';
 
 const buttonWidth = '220px';
 const buttonHeight = '60px';

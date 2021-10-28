@@ -1,8 +1,8 @@
 import React from 'react';
 import CalendarNavbar from '../components/commons/CalendarNavbar';
-import { makeStyles } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	bgRoot: {
 		background: '#ffebba',
 		width: '100vw',

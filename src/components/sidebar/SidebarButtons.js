@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import Link from 'next/link';
-import { makeStyles } from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({
 	button: {

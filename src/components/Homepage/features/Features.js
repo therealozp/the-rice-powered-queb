@@ -1,10 +1,10 @@
 import React from 'react';
 import Feature from './Feature';
-import { Typography, Grid } from '@mui/material';
+import { Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { Box } from '@mui/system';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	title: {
 		fontFamily: 'Raleway',
 		fontStyle: 'normal',

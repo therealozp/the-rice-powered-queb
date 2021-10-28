@@ -3,7 +3,7 @@ import MentorCard from '../components/cards/MentorCard';
 import IndivMentorInfo from '../components/cards/IndivMentorInfo';
 import { makeStyles } from '@mui/styles';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	root: {
 		backgroundColor: '#FED7A6',
 		display: 'flex',

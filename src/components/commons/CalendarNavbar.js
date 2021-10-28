@@ -45,7 +45,7 @@ const navLinks = [
 	},
 ];
 
-const NavItem = ({ label, href }) => {
+const NavItem = ({ label }) => {
 	const classes = useStyles();
 	return (
 		<div className={classes.navItem}>
