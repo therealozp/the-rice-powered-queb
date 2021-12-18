@@ -37,23 +37,27 @@ const useStyles = makeStyles(() => ({
 const mentors = [
 	{
 		subject: 'Toán',
-		name: 'Mạc Lê Mao',
-		about: 'Dảk bủh lmao',
+		name: 'Mạc Lê Duy',
+		about:
+			'Chúng tôi là những con người vô cùng hài hước và hứa hẹn đem lại những buổi học vô cùng hiệu quả cho bạn!',
 	},
 	{
 		subject: 'Hóa',
-		name: 'Tạ Hà Anh Dảk',
-		about: 'Dảk bủh lmao',
+		name: 'Tạ Hà Anh Khoa',
+		about:
+			'Chúng tôi là những con người vô cùng hài hước và hứa hẹn đem lại những buổi học vô cùng hiệu quả cho bạn!',
 	},
 	{
 		subject: 'Anh',
-		name: 'Lê Phú Anh Khanime',
-		about: 'Dảk bủh lmao',
+		name: 'Lê Phú Anh Khang',
+		about:
+			'Chúng tôi là những con người vô cùng hài hước và hứa hẹn đem lại những buổi học vô cùng hiệu quả cho bạn!',
 	},
 	{
 		subject: 'Văn',
-		name: 'Đinh Phạm Bủh Nghi',
-		about: 'Dảk bủh lmao',
+		name: 'Đinh Phạm Bảo Nghi',
+		about:
+			'Chúng tôi là những con người vô cùng hài hước và hứa hẹn đem lại những buổi học vô cùng hiệu quả cho bạn!',
 	},
 ];
 
