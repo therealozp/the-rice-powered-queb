@@ -5,18 +5,19 @@ import ReminderDialog from '../dialogs/ReminderDialog';
 import ReminderCard from './ReminderCard';
 
 const cards = [1, 2, 3, 4, 5];
-const ReminderPanel = () => {
+const ReminderPanel = ({ reminders }) => {
 	const [dialogOpen, setDialogOpen] = useState(false);
 	return (
 		<Box
 			sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
 		>
 			<Box>
-				{cards.map((d, i) => (
+				{reminders.map((d, i) => (
 					<ReminderCard
 						key={`reminder-${i}`}
-						note="Design review"
-						timeStr="9:00 AM — 10:00 AM"
+						note={d.note}
+						timeStr={d.timeStr}
+						topic={d.topic}
 					/>
 				))}
 			</Box>

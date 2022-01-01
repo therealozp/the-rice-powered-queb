@@ -48,7 +48,7 @@ const CustomChip = ({ bgColor, onClick, label, value, currType, icon }) => {
 		</Button>
 	);
 };
-const ReminderDialog = ({ open, handleClose }) => {
+const ReminderDialog = ({ open, handleClose, setExtraReminders }) => {
 	const [eventName, setEventName] = useState('');
 	const [eventDesc, setEventDesc] = useState('');
 
@@ -56,6 +56,15 @@ const ReminderDialog = ({ open, handleClose }) => {
 	const [date, setDate] = useState(new Date());
 	const [time, setTime] = useState('');
 
+	const setMoreReminders = () => {
+		setExtraReminders({
+			note: eventName,
+			desc: eventDesc,
+			topic: type,
+			date: date,
+			time: time,
+		});
+	};
 	return (
 		<Dialog open={open} onClose={handleClose} maxWidth={false}>
 			<DialogTitle
@@ -201,7 +210,11 @@ const ReminderDialog = ({ open, handleClose }) => {
 					background: '#ffcd8f',
 				}}
 			>
-				<Button variant="contained" color="themeYellow">
+				<Button
+					variant="contained"
+					color="themeYellow"
+					onClick={() => setMoreReminders()}
+				>
 					Create
 				</Button>
 			</DialogActions>
