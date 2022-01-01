@@ -3,6 +3,7 @@ import { Box } from '@mui/system';
 import { Button } from '@mui/material';
 import ReminderDialog from '../dialogs/ReminderDialog';
 import ReminderCard from './ReminderCard';
+import PaymentDialog from '../dialogs/PaymentDialog'
 
 const cards = [1, 2, 3, 4, 5];
 const ReminderPanel = ({ reminders }) => {
@@ -32,6 +33,19 @@ const ReminderPanel = ({ reminders }) => {
 			<ReminderDialog
 				open={dialogOpen}
 				handleClose={() => setDialogOpen(false)}
+			/>
+			<Button
+				onClick={() => setDialogOpen(true)}
+				sx={{ width: '80%', marginTop: '10px' }}
+				color="themeYellow"
+				variant="contained"
+			>
+				Thanh Toán
+			</Button>
+			<PaymentDialog 
+				open={dialogOpen}
+				handleClose={() => setDialogOpen(false)}
+				amountToPay={1000000}
 			/>
 		</Box>
 	);
