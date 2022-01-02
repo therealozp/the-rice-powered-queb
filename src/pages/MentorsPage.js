@@ -19,7 +19,7 @@ const useStyles = makeStyles(() => ({
 		display: 'flex',
 		width: '100%',
 		justifyContent: 'space-evenly',
-		margin: '75px 0',
+		margin: '32px 0 32px',
 	},
 	mentorsContainer: {
 		display: 'flex',
@@ -40,24 +40,28 @@ const mentors = [
 		name: 'Mạc Lê Duy',
 		about:
 			'Chúng tôi là những con người vô cùng hài hước và hứa hẹn đem lại những buổi học vô cùng hiệu quả cho bạn!',
+		refname: 'mlduy',
 	},
 	{
 		subject: 'Hóa',
 		name: 'Tạ Hà Anh Khoa',
 		about:
 			'Chúng tôi là những con người vô cùng hài hước và hứa hẹn đem lại những buổi học vô cùng hiệu quả cho bạn!',
+		refname: 'khoata',
 	},
 	{
 		subject: 'Anh',
 		name: 'Lê Phú Anh Khang',
 		about:
 			'Chúng tôi là những con người vô cùng hài hước và hứa hẹn đem lại những buổi học vô cùng hiệu quả cho bạn!',
+		refname: 'lekhang',
 	},
 	{
 		subject: 'Văn',
 		name: 'Đinh Phạm Bảo Nghi',
 		about:
 			'Chúng tôi là những con người vô cùng hài hước và hứa hẹn đem lại những buổi học vô cùng hiệu quả cho bạn!',
+		refname: 'bnghii',
 	},
 ];
 
@@ -77,12 +81,12 @@ const MentorsPage = () => {
 					margin: '-32px 0 64px',
 				}}
 			>
-				<Typography className={classes.title}>Our Tutors</Typography>
+				<Typography className={classes.title}>Giáo viên</Typography>
 			</div>
 			<div className={classes.filterContainer}>
 				<div>
 					<FormControl variant="outlined" style={{ width: '15vw' }}>
-						<InputLabel>Subject</InputLabel>
+						<InputLabel>Môn học</InputLabel>
 						<Select
 							id="subject_select_std"
 							value={subject}
@@ -92,16 +96,19 @@ const MentorsPage = () => {
 							<MenuItem value="">
 								<em>None</em>
 							</MenuItem>
-							<MenuItem value="Maths">Maths</MenuItem>
-							<MenuItem value="Chemistry">Chemistry</MenuItem>
-							<MenuItem value="Physics">Physics</MenuItem>
-							<MenuItem value="Literature">Literature</MenuItem>
+							<MenuItem value="Maths">Toán học</MenuItem>
+							<MenuItem value="Chemistry">Hóa học</MenuItem>
+							<MenuItem value="Physics">Vật Lý</MenuItem>
+							<MenuItem value="Literature">Văn học</MenuItem>
+							<MenuItem value="Geography">Địa Lý</MenuItem>
+							<MenuItem value="Literature">Lịch Sử</MenuItem>
+							<MenuItem value="Literature">Sinh học</MenuItem>
 						</Select>
 					</FormControl>
 				</div>
 				<div>
 					<FormControl variant="outlined" style={{ width: '15vw' }}>
-						<InputLabel>Level</InputLabel>
+						<InputLabel>Trình độ học</InputLabel>
 						<Select
 							id="level_select_std"
 							value={level}
@@ -111,16 +118,16 @@ const MentorsPage = () => {
 							<MenuItem value="">
 								<em>None</em>
 							</MenuItem>
-							<MenuItem value="Primary">Primary</MenuItem>
-							<MenuItem value="Secondary">Secondary</MenuItem>
-							<MenuItem value="High School">High School</MenuItem>
-							<MenuItem value="Bachelors">Bachelors</MenuItem>
+							<MenuItem value="Primary">Tiểu học</MenuItem>
+							<MenuItem value="Secondary">Trung học cơ sở</MenuItem>
+							<MenuItem value="High School">Trung học phổ thông</MenuItem>
+							<MenuItem value="Bachelors">Đại học</MenuItem>
 						</Select>
 					</FormControl>
 				</div>
 				<div>
 					<FormControl variant="outlined" style={{ width: '15vw' }}>
-						<InputLabel>Price</InputLabel>
+						<InputLabel>Học phí</InputLabel>
 						<Select
 							id="price_select_std"
 							value={price}
@@ -130,9 +137,9 @@ const MentorsPage = () => {
 							<MenuItem value="">
 								<em>None</em>
 							</MenuItem>
-							<MenuItem value="< 60000">{'< 60000'}</MenuItem>
-							<MenuItem value="60000-70000">60000-70000</MenuItem>
-							<MenuItem value="> 70000">{'> 70000'}</MenuItem>
+							<MenuItem value="< 60000">{'< 60000VND'}</MenuItem>
+							<MenuItem value="60000-70000">60000-70000VND</MenuItem>
+							<MenuItem value="> 70000">{'> 70000VND'}</MenuItem>
 						</Select>
 					</FormControl>
 				</div>
@@ -143,6 +150,7 @@ const MentorsPage = () => {
 						name={d.name}
 						subject={d.subject}
 						about={d.about}
+						href={d.refname}
 						key={`mentor${i + 1}`}
 					/>
 				))}

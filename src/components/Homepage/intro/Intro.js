@@ -55,7 +55,7 @@ const Intro = () => {
 	return (
 		<div className={classes.root}>
 			<div className={classes.container}>
-				<Typography className={classes.title}>QUEB</Typography>
+				<Typography className={classes.title}>learnR</Typography>
 				<Typography className={classes.body}>
 					Your one-stop shop for all things tutors
 				</Typography>
@@ -64,7 +64,7 @@ const Intro = () => {
 					endIcon={<ArrowForward fontSize="large" />}
 					href="/mentors"
 				>
-					Find Mentors
+					Tìm giáo viên
 				</Button>
 			</div>
 			<div className={classes.imageContainer}>

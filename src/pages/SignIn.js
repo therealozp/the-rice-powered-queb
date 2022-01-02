@@ -70,7 +70,7 @@ const SignInWith = ({ imgSrc, providerName }) => {
 				<Image width="24px" height="24px" src={imgSrc} alt="logo" />
 			</div>
 			<Typography style={{ fontFamily: 'Ubuntu' }}>
-				Sign in with {providerName}
+				Đăng nhập bằng {providerName}
 			</Typography>
 		</div>
 	);
@@ -87,7 +87,7 @@ const SignIn = () => {
 					<Typography
 						style={{ fontFamily: 'Abel', fontSize: '2em', marginBottom: '1em' }}
 					>
-						Log in
+						Đăng nhập
 					</Typography>
 					<div style={{ display: 'flex' }}>
 						<SignInWith providerName="Google" imgSrc="/Google.svg" />

@@ -70,27 +70,27 @@ const useStyles = makeStyles((theme) => ({
 
 const navLinks = [
 	{
-		name: 'Home',
+		name: 'Trang chủ',
 		href: '/',
 	},
 	{
-		name: 'About',
+		name: 'Về chúng tôi',
 		href: '/about',
 	},
 	{
-		name: 'Help',
+		name: 'Hướng dẫn',
 		href: '/help',
 	},
 	{
-		name: 'Features',
+		name: 'Các tính năng',
 		href: '/features',
 	},
 	{
-		name: 'See our mentors',
+		name: 'Đội ngũ',
 		href: '/mentors',
 	},
 	{
-		name: 'Contact',
+		name: 'Liên hệ',
 		href: '/contact',
 	},
 ];
@@ -135,10 +135,10 @@ const Navbar = () => {
 						</div>
 						<div className={classes.container1}>
 							<Button className={classes.signInButton} href="/signin">
-								Sign in
+								Đăng nhập
 							</Button>
 							<Button className={classes.signUpButton} href="/signup">
-								Sign up
+								Đăng ký
 							</Button>
 						</div>
 					</div>

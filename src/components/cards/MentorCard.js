@@ -6,6 +6,7 @@ import Image from 'next/image';
 // import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { Favorite, PlaylistAddCheck, ArrowForward } from '@mui/icons-material';
 import { makeStyles } from '@mui/styles';
+import router from 'next/router';
 
 const buttonWidth = '210px';
 const buttonHeight = '50px';
@@ -49,7 +50,9 @@ const useStyles = makeStyles((theme) => ({
 		alignItems: 'center',
 		justifyContent: 'center',
 	},
-	price: {},
+	price: {
+		fontSize: '1.5rem',
+	},
 	rating: {
 		alignSelf: 'flex-start',
 		margin: '50px 0',
@@ -69,7 +72,13 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function MentorCard({ subject, name, about, isMentorPage }) {
+export default function MentorCard({
+	subject,
+	name,
+	about,
+	isMentorPage,
+	href,
+}) {
 	const classes = useStyles();
 	return (
 		<Card
@@ -91,9 +100,9 @@ export default function MentorCard({ subject, name, about, isMentorPage }) {
 						<Typography className={classes.name}>{name}</Typography>
 						<Typography
 							className={classes.description}
-							style={{ marginBottom: '2rem' }}
+							style={{ marginTop: '2rem' }}
 						>
-							About me:
+							<strong>Về tôi:</strong>
 						</Typography>
 						<Typography className={classes.description}>{about}</Typography>
 					</div>
@@ -114,8 +123,16 @@ export default function MentorCard({ subject, name, about, isMentorPage }) {
 					<Button
 						className={classes.learnMoreButton}
 						endIcon={<ArrowForward />}
+						onClick={() =>
+							router.push({
+								pathname: '/mentor/[mentorname]',
+								query: {
+									mentorname: href,
+								},
+							})
+						}
 					>
-						Learn more
+						Tìm hiểu thêm
 					</Button>
 				</div>
 			</div>

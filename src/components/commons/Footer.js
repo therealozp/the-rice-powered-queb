@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
 		fontFamily: 'M PLUS 1p',
 		color: '#FFFFFF',
 		letterSpacing: 2,
+		textDecoration: 'underline',
+		textUnderlineOffset: '0.25rem',
+		cursor: 'pointer',
 	},
 	linkContainers: {
 		margin: 8,

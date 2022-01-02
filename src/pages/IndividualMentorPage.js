@@ -81,13 +81,13 @@ const IndividualMentorPage = () => {
 			<div>
 				<IndivMentorInfo
 					name="Mạc Lê Mao"
-					school="Institution of Laughter"
+					school="Trường Trung học Phổ Thông Nụ Cười"
 					age="17"
-					subject="Funniness"
-					achieves="Stand-up comedy"
-					exp="5 years of making people laugh"
-					records="soon"
-					descript="will make everyone laugh within the proximity"
+					subject="Khiếu hài hước"
+					achieves="Diễn hài tại Paris by Morning"
+					exp="5 năm làm người khác cười"
+					records="189"
+					descript="Bạn muốn đem lại niềm vui cho người khác? Hãy đến với tôi!"
 				/>
 			</div>
 		</div>

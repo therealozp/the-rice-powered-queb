@@ -152,7 +152,11 @@ const FeaturesPage = () => {
 					<Typography align="justify" className={classes.commonTypo}>
 						Mọi ý kiến thắc mắc và phản hồi về “Queb chạy bằng cơm”, vui lòng
 						liên lạc qua thông tin ở phần{' '}
-						<Link href="/contact">`&quot;`CONTACT`&quot;`</Link>
+						<Link href="/contact">
+							<span style={{ textDecoration: 'underline', cursor: 'pointer' }}>
+								contact
+							</span>
+						</Link>
 					</Typography>
 					<br />
 					<br />
