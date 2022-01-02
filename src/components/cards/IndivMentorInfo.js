@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Typography, Divider } from '@mui/material';
+import { Card, Typography, Divider, ListItem, List, Box } from '@mui/material';
+import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -7,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
 		borderRadius: '40px',
 		width: '90vw',
 		backgroundColor: 'white',
-		display: 'flex',
 		justifyContent: 'center',
 		margin: '32px 0',
 	},
@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
 	typo: {
 		fontFamily: 'Raleway',
 		fontStyle: 'normal',
-		fontWeight: '600',
 		fontSize: '1.25rem',
 		lineHeight: '160%',
 	},
@@ -53,39 +52,128 @@ export default function IndivMentorInfo({
 }) {
 	const classes = useStyles();
 	return (
-		<Card className={classes.root}>
+		// <Card className={classes.root}>
+		// <div className={classes.container}>
+		// 	<Typography className={classes.title}>Introduction</Typography>
+		// 	<List>
+		// 		<ListItem>
+		// 			<Typography className={classes.typo}>
+		// 				✧ <strong>Họ tên:</strong> {name}
+		// 			</Typography>
+		// 		</ListItem>
+		// 		<ListItem>
+		// 			<Typography className={classes.typo}>
+		// 				✧ <strong>Trường:</strong> {school}
+		// 			</Typography>
+		// 		</ListItem>
+		// 		<ListItem>
+		// 			<Typography className={classes.typo}>
+		// 				✧ <strong>Tuổi:</strong> {age}
+		// 			</Typography>
+		// 		</ListItem>
+		// 		<ListItem>
+		// 			<Typography className={classes.typo}>
+		// 				✧ <strong>Môn dạy:</strong> {subject}
+		// 			</Typography>
+		// 		</ListItem>
+		// 		<ListItem>
+		// 			<Typography className={classes.typo}>
+		// 				✧ <strong>Thành tích:</strong> {achieves}
+		// 			</Typography>
+		// 		</ListItem>
+		// 		<ListItem>
+		// 			<Typography className={classes.typo}>
+		// 				✧ <strong>Kinh nghiệm giảng dạy:</strong> {exp}
+		// 			</Typography>
+		// 		</ListItem>
+		// 		<ListItem>
+		// 			<Typography className={classes.typo}>
+		// 				✧ <strong>Số lần nhận mentee:</strong> {records}
+		// 			</Typography>
+		// 		</ListItem>
+		// 		<ListItem>
+		// 			<Typography className={classes.typo}>
+		// 				✧ <strong>Mô tả bản thân:</strong> {descript}
+		// 			</Typography>
+		// 		</ListItem>
+		// 	</List>
+		// </div>
+		// 	<Divider classes={{ root: classes.dividerColor }} variant="fullwidth" />
+		// 	<div className={classes.avalability}>
+		// 		<Typography className={classes.title}>Availability</Typography>
+		// 	</div>
+		// </Card>
+		<Card
+			sx={{
+				display: 'flex',
+				width: '65vw',
+				borderRadius: '40px',
+				margin: '32px',
+				padding: '32px',
+				alignItems: 'center',
+			}}
+		>
+			<Box
+				sx={{
+					width: '250px',
+					height: '100%',
+					display: 'flex',
+					flexWrap: 'wrap',
+					justifyContent: 'center',
+					alignItems: 'center',
+				}}
+			>
+				<AssignmentIndIcon sx={{ fontSize: 120 }} />
+				<Typography sx={{ fontSize: '1.5rem' }}>Giới thiệu </Typography>
+			</Box>
+			<Divider
+				sx={{ background: '#444', height: '350px', margin: '32px' }}
+				variant="full-width"
+				orientation="vertical"
+			/>
 			<div className={classes.container}>
-				<Typography className={classes.title}>INTRODUCTION</Typography>
-				<br />
-				<Typography className={classes.typo}>✧ Họ tên: {name}</Typography>
-				<br />
-				<Typography className={classes.typo}>✧ Trường: {school}</Typography>
-				<br />
-				<Typography className={classes.typo}>✧ Tuổi: {age}</Typography>
-				<br />
-				<Typography className={classes.typo}>✧ Môn dạy: {subject}</Typography>
-				<br />
-				<Typography className={classes.typo}>
-					✧ Thành tích: {achieves}
-				</Typography>
-				<br />
-				<Typography className={classes.typo}>
-					✧ Kinh nghiệm giảng dạy: {exp}
-				</Typography>
-				<br />
-				<Typography className={classes.typo}>
-					✧ Số lần nhận mentee: {records}
-				</Typography>
-				<br />
-				<Typography className={classes.typo}>
-					✧ Mô tả bản thân: {descript}
-				</Typography>
-				<br />
-				<br />
-				<Divider classes={{ root: classes.dividerColor }} variant="fullwidth" />
-				<br />
-				<Typography className={classes.title}>AVAILABILITY</Typography>
-				<div className={classes.avalability}></div>
+				<List>
+					<ListItem>
+						<Typography className={classes.typo}>
+							✧ <strong>Họ tên:</strong> {name}
+						</Typography>
+					</ListItem>
+					<ListItem>
+						<Typography className={classes.typo}>
+							✧ <strong>Trường:</strong> {school}
+						</Typography>
+					</ListItem>
+					<ListItem>
+						<Typography className={classes.typo}>
+							✧ <strong>Tuổi:</strong> {age}
+						</Typography>
+					</ListItem>
+					<ListItem>
+						<Typography className={classes.typo}>
+							✧ <strong>Môn dạy:</strong> {subject}
+						</Typography>
+					</ListItem>
+					<ListItem>
+						<Typography className={classes.typo}>
+							✧ <strong>Thành tích:</strong> {achieves}
+						</Typography>
+					</ListItem>
+					<ListItem>
+						<Typography className={classes.typo}>
+							✧ <strong>Kinh nghiệm giảng dạy:</strong> {exp}
+						</Typography>
+					</ListItem>
+					<ListItem>
+						<Typography className={classes.typo}>
+							✧ <strong>Số lần nhận mentee:</strong> {records}
+						</Typography>
+					</ListItem>
+					<ListItem>
+						<Typography className={classes.typo}>
+							✧ <strong>Mô tả bản thân:</strong> {descript}
+						</Typography>
+					</ListItem>
+				</List>
 			</div>
 		</Card>
 	);

@@ -6,6 +6,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { quebTheme } from '../src/themes';
 import { CssBaseline } from '@mui/material';
 import '../styles/globals.css';
+import '../styles/customcalendarstyles.css';
 export default function MyApp(props) {
 	const { Component, pageProps } = props;
 

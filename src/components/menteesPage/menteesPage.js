@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Typography } from '@mui/material';
+import { Typography, Avatar } from '@mui/material';
 import { Box } from '@mui/system';
 import PersonalInfo from '../infocards/PersonalInfo';
 import AcademicInfo from '../infocards/AcademicInfo';
@@ -57,20 +57,10 @@ const MenteesPage = () => {
 						alignItems: 'center',
 					}}
 				>
-					<Box
-						sx={{
-							width: '168px',
-							height: '168px',
-							borderRadius: '999px',
-						}}
-					>
-						<Image
-							src="/Userprofile.png"
-							width="168px"
-							height="168px"
-							alt="User Avatar"
-						/>
-					</Box>
+					<Avatar
+						src="/Userprofile.png"
+						sx={{ width: '168px', height: '168px' }}
+					/>
 					<Typography
 						sx={{
 							fontStyle: 'normal',

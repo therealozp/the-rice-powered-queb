@@ -56,6 +56,14 @@ const ReminderDialog = ({ open, handleClose, setExtraReminders }) => {
 	const [date, setDate] = useState(new Date());
 	const [time, setTime] = useState('');
 
+	const clearReminder = () => {
+		setEventDesc('');
+		setEventName('');
+		setType('');
+		setDate(new Date());
+		setTime('');
+	};
+
 	const setMoreReminders = () => {
 		setExtraReminders({
 			note: eventName,
@@ -64,6 +72,8 @@ const ReminderDialog = ({ open, handleClose, setExtraReminders }) => {
 			date: date,
 			time: time,
 		});
+		handleClose();
+		clearReminder();
 	};
 	return (
 		<Dialog open={open} onClose={handleClose} maxWidth={false}>

@@ -3,11 +3,36 @@ import { Box } from '@mui/system';
 import { Button } from '@mui/material';
 import ReminderDialog from '../dialogs/ReminderDialog';
 import ReminderCard from './ReminderCard';
-import PaymentDialog from '../dialogs/PaymentDialog'
 
-const cards = [1, 2, 3, 4, 5];
-const ReminderPanel = ({ reminders }) => {
+const ReminderPanel = () => {
 	const [dialogOpen, setDialogOpen] = useState(false);
+	const [reminders, setReminders] = useState([
+		{
+			note: 'Design review',
+			timeStr: '9:00 AM — 10:00 AM',
+			topic: 'classI',
+		},
+		{
+			note: 'Exam review',
+			timeStr: '9:00 AM — 10:00 AM',
+			topic: 'exam',
+		},
+		{
+			note: 'Little Test',
+			timeStr: '9:00 AM — 10:00 AM',
+			topic: 'classII',
+		},
+		{
+			note: 'Design review',
+			timeStr: '9:00 AM — 10:00 AM',
+			topic: 'classI',
+		},
+	]);
+
+	const addReminders = (newReminder) => {
+		setReminders([...reminders, newReminder]);
+	};
+
 	return (
 		<Box
 			sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
@@ -33,19 +58,7 @@ const ReminderPanel = ({ reminders }) => {
 			<ReminderDialog
 				open={dialogOpen}
 				handleClose={() => setDialogOpen(false)}
-			/>
-			<Button
-				onClick={() => setDialogOpen(true)}
-				sx={{ width: '80%', marginTop: '10px' }}
-				color="themeYellow"
-				variant="contained"
-			>
-				Thanh Toán
-			</Button>
-			<PaymentDialog 
-				open={dialogOpen}
-				handleClose={() => setDialogOpen(false)}
-				amountToPay={1000000}
+				setExtraReminders={(newReminder) => addReminders(newReminder)}
 			/>
 		</Box>
 	);
